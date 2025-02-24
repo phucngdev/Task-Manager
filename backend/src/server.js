@@ -1,5 +1,6 @@
 const http = require("http");
 const app = require("./app");
+const connectDB = require("./config/connectDB");
 const server = http.createServer(app);
 // const socketService = require("./api/v1/services/socket.service");
 
@@ -12,6 +13,8 @@ require("dotenv").config();
 // global._io = socketIo;
 
 // global._io.on("connection", socketService.socketConnect());
+
+connectDB();
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {

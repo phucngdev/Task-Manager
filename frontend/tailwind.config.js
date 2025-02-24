@@ -11,8 +11,11 @@ export default {
         purpleish: "#5b4c97",
         bluish: "#211944",
         darkblue: "#031544",
-        border: "#212f4e",
+        border: "#3b465e",
         hover: "#000000e0",
+      },
+      fontSize: {
+        s: "10px",
       },
       fontFamily: {
         jetbrains: ["JetBrains Mono", "monospace"],
